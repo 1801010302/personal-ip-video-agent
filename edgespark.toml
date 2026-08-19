@@ -1,0 +1,11 @@
+project_id = "REPLACE_WITH_YOUR_EDGESPARK_PROJECT_ID"
+
+[server]
+path = "server"
+
+[web]
+path = "web"
+output_path = "web/dist"
+
+[db]
+migration_branch = "main"
