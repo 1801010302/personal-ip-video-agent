@@ -1,0 +1,4 @@
+funasr-onnx==0.4.2
+modelscope==1.30.0
+numpy==1.26.4
+onnxruntime==1.19.2
