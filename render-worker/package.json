@@ -1,0 +1,26 @@
+{
+  "name": "personal-ip-render-worker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/*.test.ts src/**/*.test.ts",
+    "start": "tsx src/worker.ts",
+    "render:sample": "tsx src/render-sample.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.357",
+    "@remotion/media": "^4.0.357",
+    "@remotion/renderer": "^4.0.357",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.357"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.14",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
