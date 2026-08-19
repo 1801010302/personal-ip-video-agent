@@ -1,0 +1,18 @@
+[Unit]
+Description=Personal IP Remotion and FunASR render worker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/personal-ip-render-worker
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/personal-ip-render-worker.env
+ExecStart=/usr/local/bin/npm run start
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
