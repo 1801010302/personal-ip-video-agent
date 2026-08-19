@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="application-name" content="口播智能体" />
+    <meta name="theme-color" content="#5B5CE2" />
+    <meta name="description" content="把零散想法变成口播稿，再用自己的声音和数字人形象生成短视频。" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="口播智能体 · 想法到成片" />
+    <meta property="og:description" content="用暗号注册，连接自己的传神云账号，把想法变成口播短视频。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-v2.svg" />
+    <title>口播智能体 · 想法到成片</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (() => {
+        const watermarkXPath = '//a[@id="es-watermark"]';
+        const removeEdgeSparkWatermark = () => {
+          const watermark = document.evaluate(
+            watermarkXPath,
+            document,
+            null,
+            XPathResult.FIRST_ORDERED_NODE_TYPE,
+            null,
+          ).singleNodeValue;
+          if (watermark instanceof HTMLElement) watermark.remove();
+        };
+
+        removeEdgeSparkWatermark();
+        new MutationObserver(removeEdgeSparkWatermark).observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
