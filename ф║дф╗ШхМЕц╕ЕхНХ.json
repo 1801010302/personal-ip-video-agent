@@ -1,0 +1,20 @@
+{
+  "packageFormat": 1,
+  "product": "personal-ip-video-agent",
+  "createdAt": "2026-08-14T03:35:27.726Z",
+  "sourceBranch": "main",
+  "sourceCommit": "684bfa93827575338c2414e3900bac6105a761ec",
+  "sourceIncludesWorkingTreeChanges": true,
+  "excluded": [
+    "production credentials and environment files",
+    "EdgeSpark local state and deployment identity",
+    "Git history",
+    "dependencies and build output",
+    "user data, generated media, logs, and audit screenshots",
+    "site ownership verification file"
+  ],
+  "firstRead": [
+    "AGENTS.md",
+    "customer-deployment-and-agent-handoff.md"
+  ]
+}
