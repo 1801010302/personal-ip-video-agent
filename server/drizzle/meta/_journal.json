@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785850571990,
+      "tag": "0000_initial_product_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785852707488,
+      "tag": "0001_shallow_spot",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785853965670,
+      "tag": "0002_far_fenris",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1785857074292,
+      "tag": "0003_mysterious_phil_sheldon",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1785929250370,
+      "tag": "0004_add_content_packaging_and_covers",
+      "breakpoints": true
+    }
+  ]
+}
